@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaNest — smart home automation that just works. Control lights, climate and security from one beautiful app.">
+  <title>NovaNest | Smart Home Made Simple</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="page-bg" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <svg class="logo__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 4L4 14v14h8v-8h8v8h8V14L16 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <circle cx="16" cy="12" r="2" fill="currentColor"/>
+        </svg>
+        NovaNest
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#scenes">Scenes</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact" class="nav__cta">Get started</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy reveal">
+          <p class="eyebrow">Smart home software · London</p>
+          <h1>Your home, <span class="gradient">connected</span> in minutes</h1>
+          <p class="hero__text">
+            NovaNest brings lighting, climate, and security together in one app —
+            no electricians, no complicated hubs. Just plug in, tap, and relax.
+          </p>
+          <div class="hero__btns">
+            <a href="#pricing" class="btn btn--primary">Start free trial</a>
+            <a href="#how" class="btn btn--outline">See how it works</a>
+          </div>
+          <div class="hero__trust">
+            <div class="avatars" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <p>Loved by families across the UK &amp; Europe</p>
+          </div>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="phone-mock">
+            <div class="phone-mock__screen">
+              <img src="images/hero.jpg" alt="Cozy smart living room with warm lighting" width="600" height="750" loading="eager">
+              <div class="phone-mock__ui">
+                <span class="ui-pill ui-pill--on">Living room · On</span>
+                <span class="ui-pill">22°C · Comfort</span>
+                <span class="ui-pill">Front door · Locked</span>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-card--1">
+            <span class="float-card__icon">💡</span>
+            <div>
+              <strong>Good morning</strong>
+              <span>Lights &amp; blinds adjusted</span>
+            </div>
+          </div>
+          <div class="float-card float-card--2">
+            <span class="float-card__icon">🔒</span>
+            <div>
+              <strong>Away mode</strong>
+              <span>Home secured automatically</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Philips Hue</span><span>Google Home</span><span>Amazon Alexa</span><span>Ring</span><span>Nest</span><span>Tado</span><span>SmartThings</span><span>IKEA Trådfri</span>
+          <span>Philips Hue</span><span>Google Home</span><span>Amazon Alexa</span><span>Ring</span><span>Nest</span><span>Tado</span><span>SmartThings</span><span>IKEA Trådfri</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Why NovaNest</p>
+          <h2>Everything your home needs, nothing you don't</h2>
+          <p>Built for busy households who want a smarter home without the hassle.</p>
+        </header>
+        <div class="bento">
+          <article class="bento__item bento__item--large reveal">
+            <img src="images/home-interior.jpg" alt="Modern family home interior" loading="lazy" width="900" height="600">
+            <div class="bento__overlay">
+              <h3>One app for your whole home</h3>
+              <p>Control every room from your phone or tablet — even when you're away.</p>
+            </div>
+          </article>
+          <article class="bento__item reveal">
+            <div class="bento__icon">⚡</div>
+            <h3>Setup in under 10 minutes</h3>
+            <p>Guided onboarding walks you through pairing devices step by step.</p>
+          </article>
+          <article class="bento__item reveal">
+            <div class="bento__icon">🛡️</div>
+            <h3>Privacy first</h3>
+            <p>Your data stays encrypted. No selling your routines to advertisers.</p>
+          </article>
+          <article class="bento__item reveal">
+            <div class="bento__icon">🌍</div>
+            <h3>Works across Europe</h3>
+            <p>Local language support and partnerships in the UK, Germany, France &amp; more.</p>
+          </article>
+          <article class="bento__item bento__item--wide reveal">
+            <img src="images/devices.jpg" alt="Smart devices on a desk" loading="lazy" width="800" height="400">
+            <div class="bento__overlay">
+              <h3>Hundreds of compatible devices</h3>
+              <p>Connect the brands you already own — we speak their language.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="how">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">How it works</p>
+          <h2>From box to smart home in three steps</h2>
+        </header>
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__img">
+              <img src="images/phone-app.jpg" alt="Downloading the NovaNest app on a smartphone" loading="lazy" width="500" height="400">
+            </div>
+            <div class="step__body">
+              <span class="step__num">01</span>
+              <h3>Download &amp; create your nest</h3>
+              <p>Install NovaNest on iOS or Android, create a home profile, and invite family members in one tap.</p>
+            </div>
+          </li>
+          <li class="step step--reverse reveal">
+            <div class="step__img">
+              <img src="images/smart-lights.jpg" alt="Smart lighting in a contemporary room" loading="lazy" width="500" height="400">
+            </div>
+            <div class="step__body">
+              <span class="step__num">02</span>
+              <h3>Connect your devices</h3>
+              <p>Scan, search, or auto-detect compatible lights, thermostats, locks, and cameras — no wiring required.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__img">
+              <img src="images/family-home.jpg" alt="Family relaxing in a connected home" loading="lazy" width="500" height="400">
+            </div>
+            <div class="step__body">
+              <span class="step__num">03</span>
+              <h3>Set scenes &amp; forget</h3>
+              <p>Choose ready-made routines like Movie Night or Good Morning, or build your own with a simple drag-and-drop editor.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="scenes">
+      <div class="container">
+        <div class="split reveal">
+          <div class="split__media gallery">
+            <figure class="gallery__main">
+              <img src="images/evening-room.jpg" alt="Ambient evening lighting in a living room" loading="lazy" width="700" height="500">
+            </figure>
+            <figure class="gallery__thumb gallery__thumb--1">
+              <img src="images/kitchen.jpg" alt="Kitchen smart home setup" loading="lazy" width="400" height="300">
+            </figure>
+            <figure class="gallery__thumb gallery__thumb--2">
+              <img src="images/apartment.jpg" alt="Bright modern apartment" loading="lazy" width="400" height="300">
+            </figure>
+          </div>
+          <div class="split__text">
+            <p class="eyebrow">Scenes &amp; routines</p>
+            <h2>Moods for every moment</h2>
+            <p>Dim the lights for dinner, cool the bedroom before sleep, or lock up when everyone leaves — all triggered automatically or with one button.</p>
+            <ul class="scene-list">
+              <li><span class="scene-dot scene-dot--warm"></span> Warm Welcome</li>
+              <li><span class="scene-dot scene-dot--cool"></span> Focus &amp; Work</li>
+              <li><span class="scene-dot scene-dot--night"></span> Sleep Tight</li>
+              <li><span class="scene-dot scene-dot--away"></span> Away from Home</li>
+            </ul>
+            <a href="#pricing" class="btn btn--primary">Try scenes free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Pricing</p>
+          <h2>Simple plans for every home</h2>
+          <p>Start free. Upgrade when you're ready. Cancel anytime.</p>
+        </header>
+        <div class="plans">
+          <article class="plan reveal">
+            <h3>Starter</h3>
+            <p class="plan__price">Free <span>/ forever</span></p>
+            <p class="plan__desc">Perfect to try NovaNest in one room.</p>
+            <ul>
+              <li>Up to 5 devices</li>
+              <li>2 custom scenes</li>
+              <li>Basic automations</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--block">Get started</a>
+          </article>
+          <article class="plan plan--featured reveal">
+            <span class="plan__badge">Most popular</span>
+            <h3>Home</h3>
+            <p class="plan__price">£9.99 <span>/ month</span></p>
+            <p class="plan__desc">For families who want the full experience.</p>
+            <ul>
+              <li>Unlimited devices</li>
+              <li>Unlimited scenes &amp; routines</li>
+              <li>Voice assistant support</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary btn--block">Start 14-day trial</a>
+          </article>
+          <article class="plan reveal">
+            <h3>Pro</h3>
+            <p class="plan__price">£19.99 <span>/ month</span></p>
+            <p class="plan__desc">Power users &amp; larger properties.</p>
+            <ul>
+              <li>Everything in Home</li>
+              <li>Multi-home management</li>
+              <li>Advanced energy insights</li>
+              <li>Early access to new features</li>
+            </ul>
+            <a href="#contact" class="btn btn--outline btn--block">Contact sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Stories</p>
+          <h2>Real homes, real comfort</h2>
+        </header>
+        <div class="testimonial-grid">
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
+            <p>"We set up our entire flat in one evening. The kids love the Movie Night scene — lights dim, TV on, blinds down."</p>
+            <footer class="testimonial__author">
+              <strong>Sarah M.</strong>
+              <span>Manchester</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
+            <p>"Finally a smart home app that doesn't feel like rocket science. My parents use it without calling me every week."</p>
+            <footer class="testimonial__author">
+              <strong>James T.</strong>
+              <span>London</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__stars" aria-hidden="true">★★★★★</div>
+            <p>"Away mode gives us peace of mind when we travel. Lights simulate someone's home — brilliant idea."</p>
+            <footer class="testimonial__author">
+              <strong>Elena K.</strong>
+              <span>Berlin</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about reveal">
+        <div class="about__img">
+          <img src="images/team.jpg" alt="NovaNest team collaborating in a modern office" loading="lazy" width="700" height="500">
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">About NovaNest</p>
+          <h2>We believe smart homes should feel human</h2>
+          <p>
+            Founded in London in 2021, NovaNest Technologies Ltd. builds software that makes connected living
+            accessible, affordable, and genuinely easy — for families and homeowners who don't want to become IT experts.
+          </p>
+          <p>
+            Our mission is simple: put powerful automation in everyone's hands, with design that feels warm and intuitive,
+            not cold and corporate. We're growing across Europe so more homes can enjoy the same effortless experience.
+          </p>
+          <p class="about__tagline">Trusted smart home software · Expanding across Europe</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="team">
+      <div class="container">
+        <header class="section-head section-head--center reveal">
+          <p class="eyebrow">Our team</p>
+          <h2>The people behind NovaNest</h2>
+          <p>A small, focused team building software for everyday homes.</p>
+        </header>
+        <ul class="team-list">
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">Alex Carter</strong>
+            <span class="team-list__role">Acting CEO · Project Manager</span>
+          </li>
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">Mia Johnson</strong>
+            <span class="team-list__role">Scope &amp; Strategy Manager</span>
+          </li>
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">Daniel Park</strong>
+            <span class="team-list__role">Resource Manager</span>
+          </li>
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">Sofia Lee</strong>
+            <span class="team-list__role">Monitoring &amp; Control Manager</span>
+          </li>
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">James Wilson</strong>
+            <span class="team-list__role">Financial Manager</span>
+          </li>
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">Emma Brown</strong>
+            <span class="team-list__role">Financial Manager</span>
+          </li>
+          <li class="team-list__item reveal">
+            <strong class="team-list__name">Noah Smith</strong>
+            <span class="team-list__role">Investor Relations Lead</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-banner reveal">
+      <div class="container cta-banner__inner">
+        <div>
+          <h2>Ready to make your home smarter?</h2>
+          <p>Join thousands of households already using NovaNest.</p>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--lg">Get started free</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>We're here to help</h2>
+          <p>Questions about setup, partnerships, or press — drop us a line.</p>
+          <address>
+            <p><strong>NovaNest Technologies Ltd.</strong></p>
+            <p>London, United Kingdom</p>
+            <p><a href="mailto:hello@novanest.app">hello@novanest.app</a></p>
+            <p><a href="mailto:support@novanest.app">support@novanest.app</a></p>
+          </address>
+        </div>
+        <form class="contact-form reveal" id="contactForm" action="#" method="post">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="trial">Free trial</option>
+              <option value="support">Product support</option>
+              <option value="business">Business &amp; partnerships</option>
+              <option value="press">Press</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Send message</button>
+          <p class="form-success" id="formSuccess" hidden>Thanks! We'll get back to you soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">NovaNest</a>
+        <p>Smart home software for modern households.</p>
+        <p class="footer__copy">© 2026 NovaNest Technologies Ltd.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <nav class="footer__links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Help centre</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
